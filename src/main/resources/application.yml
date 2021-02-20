@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    hikari:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      username: root
+      password: ${DB_PASSWORD}
+
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://localhost:3306/leitner-db?createDatabaseIfNotExist=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+
+### url: jdbc:mysql://localhost:3306/leitner-db?serverTimezone=UTC&createDatabaseIfNotExist=true
+

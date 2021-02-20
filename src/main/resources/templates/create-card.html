@@ -1,0 +1,17 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+
+    <form action="#" th:action="@{/createCard}" th:object="${card}" method="post">
+        <div>
+            <span>Question:</span>
+            <textarea th:field="*{question}" id="question"></textarea>
+        </div>
+        <div>
+            <span>Answer:</span>
+            <textarea th:field="*{answer}" id="answer"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Create">
+        </div>
+    </form>
+    <a href="/">Done</a>
+</html>

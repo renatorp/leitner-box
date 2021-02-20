@@ -1,0 +1,8 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+
+    <h1>Answer</h1>
+
+    <span th:text="${card.answer}"/>
+    <a th:href="@{/correct/{id}(id=${card.id})}">Correct!</a>
+    <a th:href="@{/incorrect/{id}(id=${card.id})}">Again :(</a>
+</html>

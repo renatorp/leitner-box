@@ -1,0 +1,15 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+
+    <h1> Leitner Box</h1>
+
+    <div th:if="${card != null}">
+        <span th:text="${card.question}"/>
+        <a th:href="@{/show-answer/{id}(id=${card.id})}">Show answer</a>
+    </div>
+
+    <div th:if="${card == null}">
+        <h2>You are all set!</h2>
+    </div>
+
+    <a th:href="@{/create-card}">Create card</a>
+</html>
